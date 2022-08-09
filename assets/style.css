@@ -1,13 +1,75 @@
 /* CSS HEX */
 :root {
+  --black-blue: #00031F;
   --russian-violet: #1d174aff;
   --cornsilk: #fcf1cfff;
   --medium-champagne: #fde6a4ff;
-  --quick-silver: #a59e9dff;
+  --quick-silver: #F3F3F3;
   --bone: #e1dacfff;
 }
 
 body {
-    height: 1000vh;
-    width: calc(100vw - 8px);
+  background-color: var(--quick-silver);
+  height: 1000vh;
+  width: calc(100vw - 18px);
+  margin: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--bone);
+  position: fixed;
+  height: 100vh;
+}
+
+.close__menu, .open__menu {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--quick-silver);
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--bone);
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--black-blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  background-color: var(--russian-violet);
+  transform: translateX(26px);
 }
