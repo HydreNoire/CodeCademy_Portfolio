@@ -1,0 +1,13 @@
+/* CSS HEX */
+:root {
+  --russian-violet: #1d174aff;
+  --cornsilk: #fcf1cfff;
+  --medium-champagne: #fde6a4ff;
+  --quick-silver: #a59e9dff;
+  --bone: #e1dacfff;
+}
+
+body {
+    height: 1000vh;
+    width: calc(100vw - 8px);
+}
