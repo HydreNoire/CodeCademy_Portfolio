@@ -11,14 +11,13 @@
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars open__menu"></i>
-        <i class="fa-solid fa-xmark close__menu"></i>
-        <img src="./assets/Vectorlogo-light.svg" alt="logo">
+        <!-- <i class="fa-solid fa-bars open__menu"></i> -->
+        <img src="./assets/Vectorlogo-light.svg" alt="logo" class="logo">
         <ul>
-            <li>ABOUT <i class="fa-solid fa-arrow-right-long"></i></li>
-            <li>PROJECTS <i class="fa-solid fa-arrow-right-long"></i></li>
-            <li>SKILLS <i class="fa-solid fa-arrow-right-long"></i></li>
-            <li>CONTACT <i class="fa-solid fa-arrow-right-long"></i></li>
+            <li><a href="#about">ABOUT <i class="fa-solid fa-arrow-right-long"></i></a></li>
+            <li><a href="#projects">PROJECTS <i class="fa-solid fa-arrow-right-long"></i></a></li>
+            <li><a href="#skills">SKILLS <i class="fa-solid fa-arrow-right-long"></i></a></li>
+            <li><a href="#contact">CONTACT <i class="fa-solid fa-arrow-right-long"></i></a></li>
         </ul>
         <label class="switch">
             <input type="checkbox">
@@ -26,5 +25,41 @@
         </label>
         <p>Made by Lise</p>
     </header>
+    <i class="fa-solid fa-bars open__menu"></i>
+    <main>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <div class="img__about">
+            </div>
+            <p class="text__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, animi. Excepturi 
+                velit repellat repellendus, voluptatibus pariatur cum facilis ipsam soluta facere. 
+                Neque doloribus itaque ea. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, animi. Excepturi 
+                velit repellat repellendus, voluptatibus pariatur cum facilis ipsam soluta facere. 
+                Neque doloribus itaque ea.</p>
+        </section>
+
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <article class="slide__projects">
+                <div class="slide show__slide">
+                    <img src="./assets/proj1.jpg" alt="project">
+                </div>
+                <div class="slide">
+                    <img src="./assets/proj2.jpg" alt="project">
+                </div>
+                <div class="slide">
+                    <img src="./assets/proj3.jpg" alt="project">
+                </div>
+                <div class="slide">
+                    <img src="./assets/proj4.jpg" alt="project">
+                </div>
+                <div class="slide">
+                    <img src="./assets/proj5.jpg" alt="project">
+                </div>
+            </article>
+            <i class="fa-solid fa-circle-chevron-left button__previous"></i>
+            <i class="fa-solid fa-circle-chevron-right button__next"></i>
+        </section>
+    </main>
 </body>
 </html>
